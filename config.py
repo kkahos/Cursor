@@ -1,0 +1,65 @@
+# -*- coding: utf-8 -*-
+"""
+游戏配置文件
+定义游戏中使用的常量和配置参数
+"""
+
+# 屏幕设置
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+FPS = 60
+
+# 颜色定义 (R, G, B)
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+GRAY = (128, 128, 128)
+DARK_GRAY = (64, 64, 64)
+LIGHT_GRAY = (192, 192, 192)
+BROWN = (139, 69, 19)
+DARK_GREEN = (0, 128, 0)
+
+# 坦克设置
+TANK_SIZE = 30
+TANK_SPEED = 3
+PLAYER_TANK_COLOR = GREEN
+ENEMY_TANK_COLOR = RED
+
+# 子弹设置
+BULLET_SIZE = 5
+BULLET_SPEED = 8
+BULLET_COLOR = YELLOW
+
+# 地图设置
+TILE_SIZE = 30
+MAP_WIDTH = SCREEN_WIDTH // TILE_SIZE
+MAP_HEIGHT = SCREEN_HEIGHT // TILE_SIZE
+
+# 游戏设置
+PLAYER_LIVES = 3
+ENEMY_COUNT = 3
+ENEMY_SPAWN_DELAY = 3000  # 毫秒
+
+# 地图元素类型
+EMPTY = 0
+BRICK_WALL = 1
+STEEL_WALL = 2
+WATER = 3
+GRASS = 4
+
+# 方向定义
+UP = 0
+DOWN = 1
+LEFT = 2
+RIGHT = 3
+
+# 方向向量
+DIRECTIONS = {
+    UP: (0, -1),
+    DOWN: (0, 1),
+    LEFT: (-1, 0),
+    RIGHT: (1, 0)
+}
